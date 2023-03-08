@@ -73,7 +73,9 @@ const someFunction = async () => {
 
   //UPDATE
 
-  
+  const filter = {number: 123};
+  const update = {$set: {number: 321}};
+  user.updateOne(filter, update);
 
 
   //DELETE
